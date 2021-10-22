@@ -43,7 +43,7 @@
 
         fetch('https://api.airtable.com/v0/app9SiJUqIxbsSwyi/Visie_Doelen_Acties_VRAGEN' + querystring, {
             headers: {
-                'Authorization': 'Bearer keybe7D1M6i7oaWj6',
+                'Authorization': process.env.apiKey,
             }
 
         })
