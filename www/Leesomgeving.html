@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <title>LeesScan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="eenpunt">
+    <header>
+        <nav>
+            <div id="menu-bar">
+                <div id="menu">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+            <ul class="nav" id="nav">
+                <li><a href="index.html"><img src=img/logo.svg alt='logo van leesscan'></a></li>
+                <li><a href="informatie.html" title="Informatie">Informatie</a></li>
+                <li><a class = "keuze" title="Vragenlijst">Vragenlijst</a></li>
+                <li><a href="allepunten.html" title="Punten">Punten</a></li>
+            </ul>
+        </div>
+        <div class="menu-bg" id="menu-bg"></div>
+        </nav>
+
+    </header>
+    <main>
+        <section>
+            <h1>Punten</h1>
+            <p>Hier kan je u punt van u gekozen vakkenlijst zien.</p>
+            <div>
+                <button onclick="window.print()">Print deze pagina</button>
+            </div>
+            <div id="chart">
+                <canvas id="chart3"></canvas>
+            </div>
+            <a href="allepunten.html">Terug naar u totale punten</a>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <h3>Over website</h3>
+            <p>Deze webiste is gebouwd voor leerkrachten op te testen of ze een goede leesbeleid hanteren.</p>
+        </section>
+
+        <section>
+            <h3>Links</h3>
+            <ul>
+                <li><a href="informatie.html">Informatie</a></li>
+                <li><a class="keuze">Vragenlijst</a></li>
+                <li><a href="allepunten.html">Punten</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Heb je een vraag ?</h3>
+            <p>Email naar info@gmail.com</p>
+            <p>Telefoon naar 0458625789</p>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script src="js/chart3.js"></script>
+    <script src="js/algemeen.js"></script>
+</body>
+
+</html>

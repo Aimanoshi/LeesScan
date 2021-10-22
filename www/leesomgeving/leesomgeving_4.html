@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <title>leesScan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body id="vragen">
+    <header>
+        <nav>
+            <div id="menu-bar">
+                <div id="menu">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+                <ul class="nav" id="nav">
+                    <li><a href="../index.html"><img src=../img/logo.svg alt='logo van leesscan'></a></li>
+                    <li><a href="../informatie.html" title="Informatie">Informatie</a></li>
+                    <li><a class="keuze" title="Vragenlijst">Vragenlijst</a></li>
+                    <li><a href="../allepunten.html" title="Punten">Punten</a></li>
+                </ul>
+            </div>
+            <div class="menu-bg" id="menu-bg"></div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Krachtige en motiverend leesomgeving op Klasniveau </h1>
+            <p>
+                Geef aan op een schaal van 1 t.e.m. 5 in welke mate de stellingen van toepassing zijn.
+                1: helemaal niet waar, 2: eerder niet waar, 3: soms waar/soms niet waar, 4: eerder waar, 5: helemaal
+                waar en nvt : niet van toepassing
+            </p>
+            <p id="foutmelding">
+                <!--foutmelding-->
+                De vragenlijst is onvolledig ingevuld. Gelieve dit te corrigeren en opnieuw te
+                proberen.
+            </p>
+            <form id="form">
+                <div class="section">
+                    <p class="toon"></p>
+                    <div class="radios">
+                        <label for="een1" class="form1">
+                            <input type="radio" name="vraag1" value="1" id="een1" />
+                            <span>1</span>
+                        </label>
+
+                        <label for="twee1" class="form1">
+                            <input type="radio" name="vraag1" value="2" id="twee1" />
+                            <span>2</span>
+                        </label>
+
+                        <label for="drie1" class="form1">
+                            <input type="radio" name="vraag1" value="3" id="drie1" />
+                            <span>3</span>
+                        </label>
+
+                        <label for="vier1" class="form1">
+                            <input type="radio" name="vraag1" value="4" id="vier1" />
+                            <span>4</span>
+                        </label>
+
+                        <label for="vijf1" class="form1">
+                            <input type="radio" name="vraag1" value="5" id="vijf1" />
+                            <span>5</span>
+                        </label>
+
+                        <label for="null1" class="form1">
+                            <input type="radio" name="vraag1" value="0" id="null1" />
+                            <span>nvt</span>
+                        </label>
+                    </div>
+                    <span class="bericht bericht--error" id="errVraag1">&nbsp;</span>
+                </div>
+                <button type="submit" id="btnSubmit>">Ga naar de volgende lijst</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <h3>Over onze website</h3>
+            <p>Deze webiste is gebouwd voor leerkrachten om te testen of ze een goede leesbeleid hanteren. <a
+                    href="../informatie.html">Vind hier meer informatie over leesscan.</a></p>
+        </section>
+
+        <section>
+            <h3>Links</h3>
+            <ul>
+                <li><a href="../informatie.html">Informatie</a></li>
+                <li><a class="keuze">Vragenlijst</a></li>
+                <li><a href="../allepunten.html">Punten</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Heb je een vraag ?</h3>
+            <p>Email naar info@gmail.com</p>
+            <p>Telefoon naar 0458625789</p>
+        </section>
+    </footer>
+    <script src="../js/Leesomgeving/leesomgeving_4.js"></script>
+    <script src="../js/redirect.js"></script>
+</body>
+
+</html>

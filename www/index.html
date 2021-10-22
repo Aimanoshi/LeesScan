@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <title>LeesScan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="index">
+    <main>
+        <section>
+            <img src="img/achtergrond.svg" alt="" srcset="img/achtergrond2.svg 1370w, 
+                                                          img/achtergrond3.svg 1230w" sizes="100w">
+
+            <div id ="welkomtekst">
+                <h1 id="titel">Doe de leesscan</h1>
+                <p>bij leesscan.be</p>
+                <p>
+                    Dit is een leescan voor leerkrachten om te weten ze een goed leesbeleid hanteren. Je kan de lijst
+                    afnemen op klasniveau zoals als schoolniveau.<a href="informatie.html">Vind hier meer informatie over leesscan.</a>.
+                <p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Registeer je nu</h2>
+            <form id="form">
+                <p id="foutmelding">
+                    <!--foutmelding-->
+                    Het formulier is onvolledig ingevuld en/of bevat fouten. Gelieve dit te corrigeren en opnieuw te
+                    proberen.
+                </p>
+                <div class="vraag vraag1">
+                    <label for="vraagGebruiker">Ik ben een... *</label>
+                    <select id="vraagGebruiker" required>
+                        <option selected="selected" value="">Ik ben een ... *</option>
+                        <option value="Beleidsondersteuner / lid van het directieteam">Beleidsondersteuner / lid van het directieteam</option>
+                        <option value="leerkracht">leerkracht</option>
+                        <option value="Vakleerkracht" id="vakleerkracht">Vakleerkracht</option>
+                        <option value="Zorgkleerkracht / zorgcoördinator">Zorgkleerkracht / zorgcoördinator</option>
+                    </select>
+                    <span class="bericht bericht--error" id="errGebruiker">&nbsp;</span>
+                </div>
+
+                <div class="vraag vraag2">
+                    <label for="vraagSchoolNaam">Mijn school naam is </label>
+                    <input type="text" id="vraagSchoolNaam" value="" required />
+                    <span class="bericht bericht--error" id="errSchooNaam">&nbsp;</span>
+                </div>
+
+                <div id="adres">
+                    <div class="vraag vraag3">
+                        <label for="vraagSchoolAdres">Mijn school adres is </label>
+                        <input placeholder="Straatnaam nummer" type="text" id="vraagSchoolAdres" value="" required />
+                        <span class="bericht bericht--error" id="errSchoolAdres">&nbsp;</span>
+                    </div>
+                    <div class="vraag vraag3post">
+                        <input placeholder="postcode" type="text" id="vraagSchoolPostcode" value="" required />
+                    </div>
+                </div>
+
+                <div class="vraag vraag4">
+                    <label for="vraagNiveau">Voor welke niveau wil je de test afleggen *</label>
+                    <select id="vraagNiveau" required>
+                        <option selected="selected" value="">Welke klasniveau of op schoolniveau *</option>
+                        <option value="1ste kleuterklas">1ste kleuterklas</option>
+                        <option value="2de kleuterklas">2de kleuterklas</option>
+                        <option value="3de kleuterklas">3de kleuterklas</option>
+                        <option value="1ste leerjaar">1ste leerjaar</option>
+                        <option value="2de leerjaar">2de leerjaar</option>
+                        <option value="3de leerjaar">3de leerjaar</option>
+                        <option value="4de leerjaar">4de leerjaar</option>
+                        <option value="5de leerjaar">5de leerjaar</option>
+                        <option value="6de leerjaar">6de leerjaar</option>
+                        <option value="schoolniveau">Schoolniveau</option>
+                    </select>
+                    <span class="bericht bericht--error" id="errNiveau">&nbsp;</span>
+                </div>
+                <button type="submit" id="btnSubmit">Ga naar de vragenlijst</button>
+            </form>
+
+        </section>
+    </main>
+    <footer>
+        <section>
+            <h3>Over onze website</h3>
+            <p>Deze webiste is gebouwd voor leerkrachten om te testen of ze een goede leesbeleid hanteren. <a
+                    href="informatie.html">Vind hier meer informatie over leesscan.</a></p>
+        </section>
+
+        <section>
+            <h3>Links</h3>
+            <ul>
+                <li><a href="informatie.html">Informatie</a></li>
+                <li><a href="index.html" title="Vragenlijst">Registeer</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Heb je een vraag ?</h3>
+            <p>Email naar info@gmail.com</p>
+            <p>Telefoon naar 0458625789</p>
+        </section>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

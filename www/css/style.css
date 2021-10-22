@@ -1,0 +1,922 @@
+html {
+  font-size: 62.5%;
+  /*1rem is 10px*/
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.05rem;
+  font-family: "Raleway", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+p {
+  font-weight: 400;
+}
+main {
+  padding: 0rem 15rem;
+}
+a,
+button{
+  outline: none !important;
+}
+
+/*navigation*/
+.sticky {
+  position: fixed;
+  top: 0;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  background-color: #19bfbf;
+  align-items: stretch;
+}
+header nav ul li {
+  flex-direction: row;
+  width: 80%;
+  margin: auto 0rem;
+}
+header nav ul li:first-of-type {
+  /*logo*/
+  flex-basis: 300%;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+header nav ul li img {
+  width: 4%;
+  padding-left: 5rem;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  flex-basis: 20%;
+}
+header nav ul li a:hover {
+  border-bottom: #ff6928 solid 2px;
+  transition: 0.5s ease;
+  width: 100%;
+}
+
+/*information page*/
+/*first section*/
+#informatie main section:first-of-type {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 5rem 0rem;
+}
+#informatie main section div {
+  width: 80%;
+}
+
+/*svg*/
+#informatie main section img {
+  width: 90%;
+}
+
+/*title in section one*/
+#informatie main section div h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  padding: 10rem 0rem 1rem 10rem;
+}
+#informatie main section div p {
+  padding-bottom: 2rem;
+  padding-left: 10rem;
+}
+#informatie main section div ol {
+  padding-left: 10rem;
+}
+
+/*section two */
+#informatie main section:last-of-type {
+  border: solid white 1px;
+  background-color: #eafdfd;
+  padding: 15rem;
+  margin: 0rem -15rem;
+}
+
+/*title section 2 */
+#informatie main section:last-of-type h2 {
+  font-size: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 12rem;
+}
+
+/*p section 2 */
+#informatie main section:last-of-type p {
+  width: 80%;
+  margin: auto;
+}
+
+/*button section 2*/
+#informatie main section a {
+  text-decoration: none;
+  width: 80%;
+  background-color: #ff6928;
+  color: white;
+  padding: 1.5rem 0rem;
+  border-radius: 50px;
+  box-shadow: 2px 4px 4px #c1c4c7;
+  display: flex;
+  justify-content: center;
+  margin: 5rem auto 5rem;
+}
+#informatie main section a:hover {
+  background-color: #1b7474;
+}
+
+/*index page*/
+/*main without pic*/
+#index main:not(img) {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+}
+
+/*index background*/
+#index main img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+}
+#index main section {
+  width: 60%;
+  justify-content: center;
+}
+#index main section div {
+  margin-bottom: 2rem;
+}
+
+/*first section*/
+#index main section:first-of-type h1 {
+  font-size: 5rem;
+  color: #1b7474;
+}
+#welkomtekst {
+  position: absolute;
+  top: 25rem;
+  width: 40%;
+}
+#index main section:first-of-type p {
+  width: 80%;
+  padding-top: 1rem;
+}
+#index main section:first-of-type p a {
+  text-decoration: underline;
+  color: #ff6928;
+}
+#index main section:first-of-type p a:hover {
+  text-decoration: underline;
+  color: #43ebeb;
+}
+
+/*section 2*/
+#index h2 {
+  padding: 8rem 0rem 5rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* the form*/
+#index form input,
+#index form select {
+  border: #9b99984f 1px solid;
+  border-radius: 50px;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.8rem 0rem;
+}
+#index form input:focus,
+#index form select:focus {
+  outline: none !important;
+  border: #ff6928 1px solid;
+  padding-left: 1.5rem;
+}
+#index form select,
+#index form input::placeholder {
+  padding-left: 1.5rem;
+}
+#index form label {
+  padding-left: 1rem;
+}
+
+/*adres*/
+#adres:not(span) {
+  display: flex;
+  width: 100%;
+}
+#adres div:not(span) {
+  flex-direction: row;
+  width: 70%;
+}
+#adres div:last-of-type {
+  flex-direction: row;
+  width: 30%;
+  padding-top: 2.5rem;
+  margin-left: 3.5rem;
+}
+
+/*foutmelding*/
+#index #foutmelding {
+  display: none;
+  color: #c00;
+  padding-bottom: 2rem;
+  font-weight: 900;
+}
+.bericht--error {
+  display: none;
+  color: #c00;
+    text-align: center;
+    font-weight: 900;
+}
+
+
+/*button*/
+#index section form button {
+  margin: 1rem 0rem 8rem;
+  padding: 1rem 1rem;
+  width: 100%;
+  color: white;
+  background-color: #ff6928;
+  border-radius: 50px;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+/*choice page */
+#keuze main section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+/*h1*/
+#keuze main section h1 {
+  text-align: center;
+  padding: 8rem 0rem 5rem;
+  font-size: 3rem;
+}
+
+#keuze main section p {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+
+#keuze main section a {
+  padding: 2rem;
+  margin: 2.5rem auto;
+  border-radius: 50px;
+  background-color: #26b0b0;
+  width: 70%;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  box-shadow: 2px 4px 4px #c1c4c7;
+}
+#keuze main section a:hover {
+  background-color: #ff6928;
+}
+
+#keuze main section a:last-of-type {
+  margin-bottom: 4rem;
+}
+
+/*vragen lijst */
+#vragen {
+  position: absolute;
+}
+
+#vragen #foutmelding {
+  display: none;
+  color: red;
+  font-weight: 900;
+}
+
+#vragen main section h1 {
+  text-align: center;
+  font-size: 4rem;
+  padding: 10rem 0rem;
+}
+
+#vragen main p {
+  width: 70%;
+  margin: auto;
+  padding-bottom: 5rem;
+}
+
+#vragen main .section {
+  position: relative;
+  border-bottom: 1px #bfbfbf solid;
+  width: 100%;
+  padding: 8rem 0rem;
+  margin: auto;
+}
+
+#vragen main .section:last-of-type {
+  border-bottom: none;
+}
+
+/*button*/
+.radios {
+  text-align: center;
+  margin: 0 auto;
+}
+.radios label {
+  cursor: pointer;
+}
+
+.radios label + label {
+  margin-left: 5rem;
+}
+input[type="radio"] {
+  opacity: 0; /* hidden but still tabable */
+  position: absolute;
+}
+input[type="radio"] + span {
+  color: #071d1d;
+  border-radius: 50%;
+  padding: 12px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+}
+input[type="radio"]:checked + span {
+  background-color: #19bfbf;
+  padding: 3.5rem 4rem;
+}
+
+input[type="radio"]:focus + span {
+  color: #071d1d;
+}
+
+/*laatste button*/
+#vragen main:last-of-type button {
+  background-color: #19bfbf;
+  color: white;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  text-decoration: none;
+  padding: 2rem;
+  margin-bottom: 10rem;
+  width: 100%;
+  justify-content: center;
+}
+#vragen main:last-of-type button:hover {
+  background-color: #ff6928;
+}
+
+/*tussen pagina*/
+#tussen main section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/*background with danku text*/
+#tussen main .container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+#tussen main .container img {
+  width: 60%;
+  margin: 3rem 0rem;
+}
+#tussen main section .container h6 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  width: 40%;
+}
+
+/*buttons */
+#tussen main section a {
+  padding: 2rem;
+  border-radius: 50px;
+  background-color: #19bfbf;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  width: 50%;
+  justify-content: center;
+  margin: 0rem auto 3rem;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.25);
+}
+#tussen main section a:hover {
+  background-color: #ff6928;
+}
+
+/*alle punten samen*/
+#allepunten h1,
+#eenpunt h1 {
+  padding: 10rem 0rem 5rem;
+  font-size: 4rem;
+  text-align: center;
+}
+#allepunten main p {
+  width: 80%;
+  margin: auto;
+}
+#chart {
+  width: 80%;
+  margin: 0rem auto;
+}
+
+
+/*sub klasse punten*/
+#eenpunt main section p {
+  margin: auto;
+  text-align: center;
+}
+#eenpunt main section a, 
+#allepunten main section a {
+  text-decoration: none;
+  width: 80%;
+  background-color: #ff6928;
+  color: white;
+  padding: 1.5rem 0rem;
+  border-radius: 50px;
+  box-shadow: 2px 4px 4px #c1c4c7;
+  display: flex;
+  justify-content: center;
+  margin: 5rem auto 5rem;
+}
+#eenpunt main section a:hover,
+#allepunten main section a:hover {
+  background: #19bfbf;
+}
+
+/*button print on chart page*/
+#allepunten main section div,
+#eenpunt main section div{
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+#allepunten main section div button,
+#eenpunt main section div button{
+  width: 30%;
+  margin: 5rem auto 3rem;
+  background-color: #19bfbf;
+  color: white;
+  padding: 1.5rem 0rem;
+  border-radius: 50px;
+  box-shadow: 2px 4px 4px #c1c4c7;
+  display: flex;
+  justify-content: center;
+}
+#allepunten main section div button:hover,
+#eenpunt main section div button:hover{
+  background-color: #ff6928;
+}
+/*footer*/
+footer {
+  background-color: #071d1d;
+  color: white;
+  display: flex;
+  width: 100%;
+  padding: 12rem 0rem;
+  justify-content: center;
+}
+
+footer section {
+  width: 25%;
+  padding: 0rem 5rem;
+}
+
+footer h3 {
+  font-size: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+footer p,
+a {
+  font-size: 1.7rem;
+}
+
+/*first par*/
+footer section:first-of-type p {
+  width: 90%;
+}
+footer section:first-of-type a {
+  color: white;
+}
+footer section:first-of-type a:hover,
+footer section:nth-child(2) ul li a:hover {
+  color: #43ebeb;
+}
+
+/*second section*/
+footer section:nth-child(2) {
+  flex-basis: 10rem;
+}
+
+/*remove dots from ol 2 section*/
+footer section:nth-child(2) ul li {
+  list-style: none;
+}
+
+/*a from ul section 2*/
+footer section:nth-child(2) ul li a {
+  text-decoration: underline;
+  color: white;
+}
+
+/*                                                                         RESPONSIVE                                                                       */
+
+@media (max-width: 1358px) and (min-width: 1200px) {
+  /*title section 2 */
+  #informatie main section:last-of-type h2 {
+    padding-left: 10rem;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 1000px) {
+  #index main section:first-of-type h1 {
+    font-size: 4rem;
+  }
+  main {
+    padding: 0rem 8rem;
+  }
+
+  /*section two */
+  #informatie main section:last-of-type {
+    margin: 0rem -8rem;
+    padding: 8rem;
+  }
+  /*title section 2 */
+  #informatie main section:last-of-type h2 {
+    padding-left: 12rem;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 880px) {
+  #index {
+    background: url(../img/achtergrond4.svg) left top no-repeat;
+  }
+  main {
+    padding: 0rem 5rem;
+  }
+
+  /*form*/
+  #welkomtekst {
+    position: initial;
+    width: 60%;
+    margin: auto;
+  }
+  #index main section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #index main section:first-of-type h1 {
+    padding-top: 10rem;
+    text-align: center;
+  }
+  #index main section:first-of-type p {
+    margin: 0 auto;
+  }
+  #index main section form {
+    flex-direction: column;
+    margin: auto;
+  }
+  #index main:not(img) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+  #index main img {
+    display: none;
+  }
+
+  #informatie main section:first-of-type {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0rem;
+  }
+  /*section one*/
+  #informatie main section div {
+    width: 100%;
+    margin: 0rem auto;
+  }
+
+  /*svg*/
+  #informatie main section div img {
+    display: none;
+  }
+
+  /*section two */
+  #informatie main section:last-of-type {
+    margin: 0rem -5rem;
+    padding: 8rem 5rem;
+  }
+  /*title section 2 */
+  #informatie main section:last-of-type h2 {
+    padding-left: 8rem;
+  }
+}
+
+@media (max-width: 880px) {
+  main {
+    padding: 0rem 0rem;
+  }
+  /*nav*/
+  header nav ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    align-items: stretch;
+  }
+  header nav ul li img {
+    width: 20%;
+  }
+  #menu {
+    width: 35px;
+    height: 30px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+  }
+  #chart {
+    width: 50%;
+    margin: 0rem auto;
+  }
+  .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #1b7474;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  #bar1 {
+    transform: translateY(-5px);
+  }
+  #bar3 {
+    transform: translateY(5px);
+  }
+  ul li {
+    padding: 1rem 0;
+  }
+  .nav {
+    /*als je ul gebruikt zie je voor het sluiten nog de tekst heel snel*/
+    margin: 0rem 3rem;
+    transition: 0.3s ease;
+    display: none;
+  }
+  .menu-bg,
+  #menu-bar {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  .menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    background: #1b7474;
+    border-radius: 50%;
+    transition: 0.3s ease;
+  }
+  #menu-bar {
+    z-index: 2;
+  }
+  .change-bg {
+    width: 60rem;
+    height: 60rem;
+    transform: translate(-60%, -30%);
+  }
+  .change .bar {
+    background-color: white;
+  }
+  .change #bar1 {
+    transform: translateY(6px) rotateZ(-45deg);
+  }
+  .change #bar3 {
+    transform: translateY(-1px) rotate(45deg);
+  }
+  .change #bar2 {
+    opacity: 0;
+  }
+  .change {
+    display: block;
+  }
+  #informatie main section:first-of-type {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #informatie main section div {
+    width: 90%;
+  }
+  /*svg*/
+  #informatie main section div img {
+    display: none;
+  }
+
+  /*title, p and ol in section one*/
+  #informatie main section div h1 {
+    padding: 10rem 0rem 1rem 10rem;
+  }
+
+  #informatie main section div p,
+  #informatie main section div ol {
+    padding-left: 10rem;
+  }
+
+  /*section two */
+  #informatie main section:last-of-type {
+    padding: 0rem;
+    margin: 0rem 0rem;
+    width: 99%;
+  }
+
+  /*title section 2 */
+  #informatie main section:last-of-type h2 {
+    padding: 6rem 0rem 4rem;
+    padding-left: 6rem;
+  }
+
+  /*para section 2 */
+  #informatie main section:last-of-type p {
+    width: 70%;
+    margin: auto;
+  }
+
+  /*index*/
+  /*first section*/
+  /*welkom tekst*/
+  /*  #index main section:first-of-type {
+    padding: 0;
+  }
+  */
+  #welkomtekst {
+    position: initial;
+    width: 80%;
+    margin: 0 auto;
+  }
+  #index main section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #index main section:first-of-type h1 {
+    font-size: 4rem;
+    padding-top: 10rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+  #index main section:first-of-type p {
+    width: 80%;
+    margin: 0 auto;
+  }
+  /*form*/
+  #index main section form {
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+  }
+  /*index background*/
+  #index main img {
+    display: none;
+  }
+  #index main:not(img) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+
+  /*vragen lijst*/
+
+  .radios label + label {
+    margin-left: 0px;
+  }
+
+  /*buttons*/
+  #tussen main .container img {
+    width: 80%;
+    margin: 3rem 0rem;
+  }
+  /*buttons */
+  #tussen main section a {
+    padding: 1rem;
+  }
+
+  /*footer*/
+  footer {
+    background-color: #071d1d;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+
+  footer section {
+    padding: 0rem 0rem;
+    width: 80%;
+    margin: 3rem auto;
+    text-align: center;
+  }
+  /*first par*/
+  footer section:first-of-type p {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 570px) {
+    /*background with danku text*/
+    #tussen main section .container h6 {
+      padding-top: 1.5rem;
+      font-size: 1.5rem;
+      width: 50%;
+    }
+  }
+  @media (max-width: 430px) {
+    #index main section:first-of-type h1 {
+      font-size: 3rem;
+      width: 85%;
+    }
+
+    /*title in section one*/
+    #informatie main section div h1 {
+      text-transform: uppercase;
+      font-size: 4rem;
+      padding: 10rem 0rem 1rem 6rem;
+    }
+    #informatie main section div p,
+    #informatie main section div ol {
+      padding-left: 6rem;
+    }
+
+    /*background with danku text*/
+    #tussen main section .container h6 {
+      font-size: 1rem;
+      width: 60%;
+      padding-top: 0.5rem;
+      line-height: 1.5rem;
+    }
+
+    /*buttons */
+    #tussen main section a {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 350px) {
+    /*title in section one*/
+    #informatie main section div h1 {
+      text-transform: uppercase;
+      font-size: 4rem;
+      padding: 10rem 0rem 1rem 3.5rem;
+    }
+
+    #informatie main section div p,
+    #informatie main section div ol {
+      padding-left: 6rem;
+    }
+    #adres:not(span) {
+      display: inline-block;
+      width: 100%;
+    }
+    #adres div:first-of-type {
+      width: 100%;
+      margin-left: 0rem;
+    }
+    #adres div:last-of-type {
+      width: 100%;
+      margin-top: -4rem;
+      margin-left: 0rem;
+    }
+    #index form select,
+    #index form input::placeholder {
+      font-size: 1.3rem;
+    }
+  }
+}
+/*print*/
+@media print {
+  @page { margin: 0; }
+  body { margin: 1.6cm;}
+  footer{display: none;}
+  nav {display: none;}
+
+}
